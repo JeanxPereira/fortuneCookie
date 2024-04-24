@@ -1,0 +1,133 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscayled;
+ }
+
+:root {
+  --bg-light-color: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  --bg-accent-color: #FF9500;
+  --bg-accent-color-selected: #FF9500;
+  --bg-accent-color-greyed: #DCE2E9;
+  --bg-luckyCard-color: #E4EDF1;
+  --bg-text-color: #34355B;
+  font-size: 62.5%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-light-color);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button {
+  background: var(--bg-accent-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 0 .4rem .4rem 0;
+  cursor: pointer;
+
+  transition: background .1s ease-in-out;
+}
+
+button:hover {
+  background: var(--bg-accent-color-selected);
+}
+
+/* SCREEN 1 SECTION */
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+
+  text-align: center;
+
+}
+
+#title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1, p {
+  color: var(--bg-text-color);
+}
+
+p {
+  opacity: .8;
+}
+
+#cookie {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background: var(--bg-accent-color-greyed);
+  width: 6rem;
+  border-radius: .4rem 0 0 .4rem;
+}
+
+/* SCREEN 2 SECTION */
+
+.screen2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+ }
+
+
+h2 {
+  font-size: 2.4rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+  width: 60%;
+}
+
+#luckyCard {
+  background: var(--bg-luckyCard-color);
+  width: 300px;
+  height: 10rem;
+  box-shadow: .4rem .4rem .4rem rgba(0, 0, 0, 0.35);
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+#luckyMessage {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.5rem;
+}
+
+.hide {
+  display: none;
+}
